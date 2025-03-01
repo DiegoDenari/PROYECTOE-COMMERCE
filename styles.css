@@ -48,10 +48,7 @@ header nav button:hover {
 }
 
 
-.sectionmain{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* ---------------ASIDE------------*/
 /* Estilos generales para el aside */
@@ -68,7 +65,10 @@ aside {
     justify-content: center;
 }
 
-
+section aside{
+    height: 100%;
+    
+}
 
 aside h2 {
     font-size: 1.42em;
@@ -159,6 +159,8 @@ main {
 }
 
 .sectionmain{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
@@ -526,6 +528,11 @@ aside {
     margin-bottom: 10px; 
 }
 
+.section aside {
+    width: 100%;
+    height: 100%;
+}
+
 .searchproduct {
     display: flex;
     justify-content: center;
@@ -571,7 +578,7 @@ main {
     background-color: #92efff3b;
 }
 
-.sectionmain {
+.section main {
     width: 100%;
     height: 100%;
 }
