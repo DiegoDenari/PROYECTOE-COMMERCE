@@ -1,5 +1,10 @@
 /* ---------------GENERAL------------*/
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
 
 h1{
     display: none;
