@@ -1,0 +1,24 @@
+/* ---------------MAIN------------*/
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #92efff3b;
+    box-sizing: border-box;
+    flex-grow: 1; 
+}
+
+.sectionmain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
