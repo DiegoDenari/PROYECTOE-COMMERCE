@@ -52,16 +52,17 @@ header nav button:hover {
 }
 
 /* ---------------ASIDE------------*/
+#asidefond {
+    background-image: radial-gradient(circle, #6accfaa2, #0056b3);
+}
+
 aside {
     width: 20%;
+    margin: 0 auto;
     background-color: #6accfaa2;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(95, 65, 65, 0.1);
     min-height: 100vh;
-}
-
-section aside {
-    height: 100%;
 }
 
 .searchproduct {
@@ -134,6 +135,11 @@ h2 {
 }
 
 /* ---------------MAIN------------*/
+#mainfond {
+    background-image: radial-gradient(circle, #6accfaa2, #0056b3);
+}
+
+
 main {
     width: 80%;
     margin: 0 auto;
