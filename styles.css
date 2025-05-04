@@ -1,11 +1,16 @@
 /* ---------------GENERAL------------*/
-
-h1{
-    display: none;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
 }
 
-a{
+h1 {
+    display: none;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -15,11 +20,11 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh; 
 }
 
-/* ---------------HEADER------------*/
 
+/* ---------------HEADER------------*/
 header {
     display: flex;
     justify-content: space-between;
@@ -30,9 +35,16 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;   
 }
 
+.navbar-nav ms-auto mb-2 mb-lg-0{
+    display: flex;
+    flex-direction: row;
+}
 header nav button {
     margin-left: 10px;
     padding: 5px 10px;
@@ -46,27 +58,24 @@ header nav button:hover {
     background-color: #0000001a;
 }
 
-
-.sectionmain{
-    display: flex;
-    justify-content: space-between;
+/* ---------------ASIDE------------*/
+#asidefond {
+    background-image: radial-gradient(circle, #6accfaa2, #0056b3);
 }
 
-/* ---------------ASIDE------------*/
-/* Estilos generales para el aside */
 aside {
+    width: 100%;
+    margin: 0 auto;
     background-color: #6accfaa2;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(95, 65, 65, 0.1);
-    width: 20%;
+    
 }
 
-.searchproduct{
+.searchproduct {
     display: flex;
     justify-content: center;
 }
-
-
 
 aside h2 {
     font-size: 1.42em;
@@ -74,9 +83,6 @@ aside h2 {
     color: #333;
 }
 
-
-
-/* Estilos para el buscador */
 #search-input {
     width: 100%;
     padding: 10px;
@@ -86,24 +92,25 @@ aside h2 {
     font-size: 1em;
 }
 
-h3{
-    color: #1b1b1b !important;
+h3 {
+    color: #000000 !important;
     text-decoration: underline;
-
 }
-h2{
+
+h2 {
     color: #000 !important;
     font-weight: 800 !important;
 }
 
-/* Estilos para la lista de categorías */
-.category-filter h3, .price-filter h3 {
+.category-filter h3,
+.price-filter h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #555;
+    color: #000000;
 }
 
-.category-list, .subcategory-list {
+.category-list,
+.subcategory-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -126,30 +133,36 @@ h2{
 
 .subcategory-list li a {
     text-decoration: none;
-    color: #444444;
+    color: #000000;
     font-size: 0.9em;
 }
 
 .subcategory-list li a:hover {
-    color: #000;
+    color: #444444;
 }
-
 
 /* ---------------MAIN------------*/
-
-
-/* Estilos generales para el main */
-main {
-    width: 80%; /* Ocupa el 80% del espacio disponible */
-    margin: 0 auto; /* Centra el main en la pantalla */
-    padding: 20px;
-    background-color: #92efff3b;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+#mainfond {
+    background-image: radial-gradient(circle, #6accfaa2, #0056b3);
 }
 
-.sectionmain{
+
+main {
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #92efff3b;
+    box-sizing: border-box;
+    flex-grow: 1; 
+}
+
+.sectionmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+    flex-grow: 1;
 }
 
 main h1 {
@@ -159,14 +172,12 @@ main h1 {
     text-align: center;
 }
 
-/* Estilos para la grilla de productos */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas del mismo tamaño */
-    gap: 20px; /* Espacio entre productos */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-/* Estilos para cada producto */
 .product {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -190,7 +201,7 @@ main h1 {
 
 .product p {
     font-size: 1.1em;
-    color: #4bd828;
+    color: #41922c;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -217,21 +228,17 @@ main h1 {
     background-color: #0056b3;
 }
 
-
 /* ---------------FOOTER------------*/
 footer {
     text-align: center;
     padding: 10px;
     background-color: #0056b3;
     color: white;
-    margin-top: auto;
+    margin-top: auto; 
 }
 
 /* ---------------FORMULARIO DE REGISTRO------------*/
-
-/* Contenedor del formulario */
 .contenedor-formulario {
-   
     background-color: #fff;
     padding: 3.5rem;
     border-radius: 8px;
@@ -241,7 +248,6 @@ footer {
     max-width: 400px;
 }
 
-/* Título del formulario */
 .contenedor-formulario h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -249,7 +255,6 @@ footer {
     text-align: center;
 }
 
-/* Estilos para los campos del formulario */
 .campo {
     margin-bottom: 1rem;
 }
@@ -276,7 +281,6 @@ footer {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Estilos para el botón de registro */
 .boton-registro {
     width: 100%;
     padding: 0.75rem;
@@ -310,7 +314,6 @@ footer {
     background-color: #0056b3;
 }
 
-/* Estilos para el texto de registro */
 .texto-registro {
     text-align: center;
     margin-top: 1rem;
@@ -328,8 +331,6 @@ footer {
 }
 
 /* ---------------CARRITO DE COMPRAS------------*/
-
-/* Contenedor del carrito */
 .contenedor-carrito {
     background-color: #fff;
     padding: 2rem;
@@ -339,7 +340,6 @@ footer {
     max-width: 600px;
 }
 
-/* Título del carrito */
 .contenedor-carrito h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -347,12 +347,10 @@ footer {
     text-align: center;
 }
 
-/* Lista de productos */
 .lista-productos {
     margin-bottom: 2rem;
 }
 
-/* Estilos para cada producto */
 .producto {
     display: flex;
     align-items: center;
@@ -427,7 +425,6 @@ footer {
     background-color: #cc0000;
 }
 
-/* Total y botón de pago */
 .total {
     text-align: right;
     margin-top: 1.5rem;
@@ -456,4 +453,265 @@ footer {
 
 .boton-pago:hover {
     background-color: #36b416;
+}
+
+@media (max-width: 768px) {
+    /* ---------------GENERAL------------*/
+    h1 {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+
+    /* ---------------HEADER------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: white;
+    }
+
+
+    header .logo img {
+        border-radius: 20%; 
+        width: 80px;       
+        height: 80px;
+        object-fit: cover;
+        transition: border-radius 0.3s ease; 
+    }
+
+    
+    .navbar-nav.ms-auto.mb-2.mb-lg-0 {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;          
+        flex-wrap: wrap;   
+        justify-content: flex-end; 
+    }
+
+    header nav button {
+        margin-left: 0;   
+        padding: 6px 10px; 
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+        border-radius: 4px; 
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: all 0.3s ease;
+    }
+
+    header nav button:hover {
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-color: white;
+    }
+
+    /* ---------------ASIDE------------*/
+    aside {
+        width: 20%;
+        background-color: #6accfaa2;
+        padding: 5px;
+        box-shadow: 0 2px 5px rgba(95, 65, 65, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .section aside {
+        width: 100%;
+    }
+
+    .searchproduct {
+        display: flex;
+        justify-content: center;
+    }
+
+    aside h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    #search-input {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+
+    .category-filter h3,
+    .price-filter h3 {
+        font-size: 1em;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .category-list li {
+        margin-bottom: 8px;
+    }
+
+    .subcategory-list {
+        margin-left: 10px;
+    }
+
+    .subcategory-list li a {
+        font-size: 0.8em;
+    }
+
+    /* ---------------MAIN------------*/
+    main {
+        width: 100%;
+        padding: 10px;
+        background-color: #92efff3b;
+        
+    }
+
+    .section main {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    main h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product h3 {
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .product p {
+        font-size: 0.9em;
+    }
+
+    .product input[type="number"] {
+        width: 50px;
+        padding: 4px;
+    }
+
+    .product button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    /* ---------------FOOTER------------*/
+    footer {
+        height: 20%;
+        padding: 8px;
+        font-size: 0.9em;
+        margin-top: auto; 
+    }
+
+    /* ---------------FORMULARIO DE REGISTRO------------*/
+    .contenedor-formulario {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .contenedor-formulario h1 {
+        font-size: 1.5em;
+    }
+
+    .campo input {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
+
+    .boton-registro,
+    .boton-login {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
+
+    /* ---------------CARRITO DE COMPRAS------------*/
+    .contenedor-carrito {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .contenedor-carrito h1 {
+        font-size: 1.5em;
+    }
+
+    .imagen-producto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info-producto h2 {
+        font-size: 1em;
+    }
+
+    .precio {
+        font-size: 0.9em;
+    }
+
+    .cantidad input {
+        width: 50px;
+        padding: 0.4rem;
+    }
+
+    .eliminar {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8em;
+    }
+
+    .total h2 {
+        font-size: 1.2em;
+    }
+
+    .boton-pago {
+        padding: 0.5rem 1rem;
+        font-size: 0.9em;
+    }
+
+    /* ---------------OTROS------------*/
+    header .logo img {
+        height: 30px;
+    }
+
+    header nav button {
+        font-size: 0.8em;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor-formulario,
+    .contenedor-carrito {
+        padding: 1rem;
+    }
 }

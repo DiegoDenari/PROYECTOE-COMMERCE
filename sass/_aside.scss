@@ -1,0 +1,43 @@
+/* ---------------ASIDE------------*/
+#asidefond {
+    background-image: radial-gradient(circle, #6accfaa2, #0056b3);
+}
+
+aside {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #6accfaa2;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(95, 65, 65, 0.1);
+    
+}
+
+.searchproduct {
+    display: flex;
+    justify-content: center;
+}
+
+aside h2 {
+    font-size: 1.42em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+h3 {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #000 !important;
+    font-weight: 800 !important;
+}
